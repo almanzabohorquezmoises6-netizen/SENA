@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pagina de ejemplo con contacto</title>
+    <link rel="stylesheet" href="styles.css">
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+
+      
+        <header class="header">
+            <div class="logo">MiSitio<span>web</span></div>
+            <button class="nav-toggle" id="navtoggle" aria-label="Abrir menu">
+                <i class="fas fa-bars"></i>
+                </button>
+                <nav class="nav-menu" id="navmenu">
+                    <ul>
+                        <li><a href="#inicio">inicio</a></li>
+                        <li><a href="#servicios">sevicios</a></li>
+                        <li><a href="#nosotros">nosotros</a></li>
+                        <li><a href="#contacto">contacto</a></li>
+                    </ul>
+                </nav>
+            </header>
+
+
+            <section class="banner" id="inicio">
+    <div class="banner-content">
+        <h1>Bienvenido a Nuestra Plataforma</h1>
+        <p>Construimos soluciones digitales a tu medida con diseño moderno y funcional.</p>
+        <a href="#contacto" class="btn">Contáctanos</a>
+    </div>
+</section>
+
+<!-- SECCIÓN DE CONTACTO -->
+
+<section class="contacto-container" id="contacto">
+    <h2>Contacto e Información</h2>
+    <p class="section-subtitle">Ponte en contacto con nosotros a través de cualquiera de nuestros medios.</p>
+
+    <div class="contacto-grid">
+
+        <!-- Tarjetas de Información de Contacto -->
+        <div class="info-card">
+            <i class="fas fa-envelope icon"></i>
+            <h3>Correo Electrónico</h3>
+            <p>contacto@ejemplo.com</p>
+            <p>soporte@ejemplo.com</p>
+        </div>
+
+        <div class="info-card">
+            <i class="fas fa-map-marker-alt icon"></i>
+            <h3>Dirección</h3>
+            <p>Av. Principal #123, Oficina 402</p>
+            <p>Ciudad de Ejemplo, País</p>
+        </div>
+
+        <div class="info-card">
+            <i class="fas fa-phone-alt icon"></i>
+            <h3>Teléfonos</h3>
+            <p>+57 (1) 234-5678</p>
+            <p>+57 300 123 4567</p>
+        </div>
+
+        <div class="info-card">
+            <i class="fas fa-clock icon"></i>
+            <h3>Horario de Atención</h3>
+            <p>Lun - Vie: 8:00 AM - 6:00 PM</p>
+            <p>Sábados: 9:00 AM - 1:00 PM</p>
+        </div>
+
+    </div>
+
+    <div class="form-container">
+        <h3>Envíanos un mensaje</h3>
+        <form id="contactForm">
+            <div class="input-group">
+                <input type="text" id="nombre" placeholder="Tu Nombre completo" required>
+            </div>
+            <div class="input-group">
+                <input type="email" id="email" placeholder="Tu Correo Electrónico" required>
+            </div>
+            <div class="input-group">
+                <textarea id="mensaje" rows="5" placeholder="Escribe tu mensaje aquí..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn-submit">Enviar Mensaje</button>
+        </form>
+        <div id="formResponse" class="response-message"></div>
+    </div>
+</section>
+
+
+<footer>
+    <p>&copy; 2026 MiSitioWeb. Todos los derechos reservados.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
